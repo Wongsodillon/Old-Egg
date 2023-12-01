@@ -5,7 +5,7 @@ import Featured from '../../components/Featured/Featured'
 import { useAuth } from '../../hooks/useAuth';
 import { Link } from 'react-router-dom';
 import "./Home.scss"
-import dummy from "../assets/dummyproduct1.jpg"
+import dummy from "../../assets/dummyproduct1.jpg"
 
 import { getCategories } from '../../api/ProductsAPI';
 

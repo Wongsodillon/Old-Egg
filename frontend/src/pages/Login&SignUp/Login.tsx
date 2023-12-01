@@ -1,11 +1,11 @@
 import React, { useState, useContext } from "react";
-import logo from "../assets/logo.png"
+import logo from "../../assets/logo.png"
 import { Link, useNavigate } from "react-router-dom"
 import GoogleLoginComponent from "../../components/GoogleLogin/GoogleLogin";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import axios, { AxiosError } from "axios"
-import "./login.scss"
 import { useAuth } from "../../hooks/useAuth";
+import "./login.scss"
 
 const Login = () => {
 

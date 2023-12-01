@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "./SignUp.scss"
 import { Link, useNavigate } from "react-router-dom"
 import { AiFillEyeInvisible, AiFillEye, AiFillQuestionCircle, AiFillCheckCircle } from "react-icons/ai";
-import Logo from "../assets/logo.png"
+import Logo from "../../assets/logo.png"
 import axios from 'axios';
 
 const SignUp = () => {

@@ -9,7 +9,6 @@ const ShopCard = ({ product }: { product: ProductResult }) => {
       <img src={product.product_url} alt="" />
       <div className="flex space-between full-width">
         <Rating rating={product.product_rating} rating_count={product.product_rating_count}/>
-        <img src={product.product_brand} className="product-brand-logo" />
       </div>
       <Link style={{ textDecoration: 'none', color: 'inherit'}} to={`/product/${product.product_id}`}>
         <p className='product-name'>{product.product_name}</p>
