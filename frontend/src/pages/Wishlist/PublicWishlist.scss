@@ -1,0 +1,14 @@
+.wishlist-filter {
+  min-width: 12vw; 
+  max-width: 15vw;
+}
+
+.public-wishlists-container {
+  .wishlist-settings {
+    width: calc(100% - 4rem);
+    padding-block: 0.75rem;
+    padding-inline: 2rem;
+    background-color: #f4f5f5;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,21 @@
+.my-wishlist-details {
+  min-width: 20vw;
+  flex: 1;
+  .wishlist-name {
+    font-size:3rem;
+    font-family: Smooch Sans;
+  }
+  .edit-add-btn {
+    font-weight: bold;
+    padding-block: 0.25rem;
+    padding-inline: 0.5rem;
+    border: 1px solid var(--gray);
+    background-color: white;
+  }
+}
+.see-price-cart {
+  width: calc(100% - 4rem);
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  background-color: #f4f5f7;
+}

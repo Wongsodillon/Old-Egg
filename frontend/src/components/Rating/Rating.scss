@@ -1,0 +1,14 @@
+.rating-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  p {
+    font-size: 14px;
+  }
+}
+.rating {
+  display: flex;
+}
+.icon-rating {
+  color: orange;
+}

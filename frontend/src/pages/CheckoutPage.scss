@@ -1,0 +1,40 @@
+.checkout-page {
+  .title {
+    font-size: 1.25rem;
+  }
+  .deliveries {
+    width: calc(100% - 4rem);
+    background-color: #f4f5f7;
+    padding-block: 2rem;
+    padding-inline: 2rem;
+  }
+  .ship-to {
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    border: 2px solid var(--orange);
+    background-color: white;
+    cursor: pointer;
+    width: 10rem;
+    .your-location {
+      color: var(--orange);
+    }
+  }
+  .address-cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .address {
+    padding: 1rem;
+    border: 1px solid #cecece;
+    .street {
+      color: #9ca8b1;
+      font-size: 14px;
+    }
+    .address-radio {
+      cursor: pointer;
+      transform: scale(1.5);
+    }
+  }
+  padding-block: 4rem;
+  padding-inline: 4rem;
+  min-height: 100%;
+}

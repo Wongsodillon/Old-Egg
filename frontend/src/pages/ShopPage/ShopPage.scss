@@ -1,0 +1,126 @@
+.shop-header {
+  padding-inline: 5rem;
+  padding-block: 0.5rem;
+  border-block: 2px solid #e8e8e8;
+}
+.shop-info-container {
+  gap: 1rem;
+  .shop-url-container {
+    width:5rem;
+    height: 5.5rem;
+    background-color: #e8e8e8;
+    border-radius: 50%;
+    padding-inline: 0.25rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .shop-info {
+    gap: 0.4rem;
+    padding-block: 0.5rem;
+    .shop-more-info {
+      gap: 0.75rem;
+    }
+    .bottom-shop-info {
+      gap: 0.75rem;
+      .shop-follow {
+        color: white;
+        font-weight: bold;
+        padding-block: 0.2rem;
+        padding-inline: 1.125rem;
+        background-color: var(--blue);
+        border-radius: 12px;
+      }
+      .message-shop {
+        padding-inline: 1.125rem;
+        padding-block: 0.2rem;
+        background-color: white;
+        font-weight: bold;
+        border: 1px solid black;
+        border-radius: 12px;
+      }
+    }
+  }
+}
+.shop-tab {
+  display: flex;
+  justify-content: center;
+  background-color: #ebf1fd;
+  padding-block: 1.25rem;
+  border-bottom: 1px solid var(--gray);
+  .shop-tab-container {
+    cursor: pointer;
+    padding-inline: 1rem;
+    p {
+      font-size: 16px;
+      user-select: none;
+      white-space: nowrap;
+      color: #77767d;
+    }
+  }
+  .active-tab {
+    p {
+      color: #b85454;
+      border-bottom: 2px solid #b85454;
+    }
+  }
+  :not(:last-child) {
+    border-right: 1px solid #dadeea;
+  }
+}
+
+.store-home {
+  padding-inline: 5rem;
+  padding-bottom: 4rem;
+  min-height: 100vh;
+  background-color: #e5ecfb;
+  .shop-banner {
+    width: 100%;
+    height: 18rem;
+    margin-bottom: 4rem;
+  }
+  .shop-categories-container {
+    .shop-categories {
+      width: 100%;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap:2rem;
+      .shop-category-card {
+        padding-inline:4rem;
+        padding-block: 2rem;
+        background-color: var(--light-blue);
+        border-radius: 16px;
+        img {
+          width: 100%;
+          height: 12rem;
+        }
+        p {
+          font-size: 20px;
+          font-weight: bold;
+          color: #212121;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+
+.shop-about-us {
+  padding-inline: 15rem;
+  padding-top: 4rem;
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+  h3 {
+    margin-bottom: 0.25rem;
+  }
+  .about-us {
+    margin-top: 1.5rem;
+  }
+}
+
+.shop-title {
+  font-weight: bold;
+  color: #102652;
+}

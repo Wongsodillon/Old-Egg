@@ -1,0 +1,43 @@
+.review-bar {
+  width: 300px;
+  height: 17px;
+  border-radius: 10px;
+  background-color: var(--light-gray);
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.review-count {
+  font-size: 14px;
+  position: absolute;
+  top: 1px;
+  left: 8px;
+}
+
+.circular-review {
+  position: relative;
+  height: 9rem;
+  width:  9rem;
+  border-radius: 50%;
+  .percentage {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+  }
+  .review-type {
+    position: relative;
+    color: var(--gray);
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+.circular-review::before {
+  content: "";
+  position: absolute;
+  height: 95%;
+  width: 95%;
+  border-radius: 50%;
+  background-color: white;
+}

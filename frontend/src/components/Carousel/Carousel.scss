@@ -1,0 +1,27 @@
+.left-arrow {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  padding-block: 1.5rem;  
+  padding-inline: 0.5rem;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 12px;
+  cursor: pointer;
+}
+.right-arrow {
+  position: absolute;
+  top: 15%;
+  right: 1%;
+  padding-block: 1.5rem;  
+  padding-inline: 0.5rem;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 12px;
+  cursor: pointer;
+  
+}
+
+@media (max-width: 1200px) {
+  .left-arrow {
+    left: 1%;
+  }
+}

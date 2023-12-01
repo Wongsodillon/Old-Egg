@@ -1,0 +1,53 @@
+.account-page {
+  padding-inline: 16rem;
+  padding-block: 4rem;
+}
+.account-menus {
+  gap: 3rem;
+  padding-right: 4rem;
+  border-right: 1px solid var(--light-gray);
+  .account-title {
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 1px solid var(--light-gray);
+    padding-block: 1.5rem;
+    margin-bottom: -1.5rem;
+  }
+  .menu-container {
+    :first-child {
+      font-weight: bold;
+    }
+    :not(:first-child) {
+      cursor: pointer;
+    }
+  }
+}
+
+.account-settings {
+  padding-block:1.5rem;
+  padding-inline: 2rem;
+  .account-title {
+    font-style: italic;
+  }
+}
+.account-information-container {
+  border-bottom: 1px solid var(--light-gray);
+  padding-block: 1.5rem;
+  .account-information {
+    .info-type {
+      width: 10rem;
+    }
+    .edit-add-btn {
+      font-weight: bold;
+      padding-block: 0.25rem;
+      padding-inline: 0.5rem;
+      border: 1px solid black;
+    }
+    .users-name {
+      flex: 1;
+    }
+  }
+  .user-bottom-info {
+    margin-left: 12rem;
+  }
+}

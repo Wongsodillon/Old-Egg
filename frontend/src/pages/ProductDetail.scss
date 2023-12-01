@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Smooch+Sans&display=swap');
+
+.product-detail-page {
+  padding-inline: 8rem;
+  padding-block: 4rem;
+  .product-image {
+    flex: 1;
+    width: clamp(15rem, 100%, 25rem);
+    .curr-image {
+      width: 100%;
+    }
+    .images {
+      background-color: #f3f3f3;
+      gap: 0.5rem;
+      padding: 0.7rem;
+      height: 4.5rem;
+      overflow: auto;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      scrollbar-width: thin; 
+      scrollbar-color: #888 #f3f3f3; 
+    }
+    .image-thumbnail {
+      object-fit: cover;
+      cursor: pointer;
+    }
+    .active-url {
+      border: 2px solid var(--orange);
+    }
+    .images::-webkit-scrollbar {
+      width: 1px;
+    }
+    .images::-webkit-scrollbar-thumb {
+      background-color: #888;
+    }
+  }
+  .product-information {
+    flex: 1;
+    .name {
+      font-family: 'Fjalla One', 'Helvetica';
+      font-size: clamp(14px, 1.5vw, 24px);
+      font-weight: bold;
+    }
+    .shipping-price {
+      background-color: #cf4900;
+      padding-inline: 1rem;
+      padding-block: 0.25rem;
+      color: white;
+      font-weight: bold;
+    }
+    .visit {
+      color: var(--blue);
+      font-weight: bold;
+    }
+  }
+  .manage-order {
+    height: 100%;
+    padding-inline: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    .sold-shipped {
+      width: 100%;
+      font-size: 12px;
+      color: var(--blue);
+      font-style: italic;
+      font-weight: bold;
+      padding-block: 1rem;
+      border-bottom: 1px solid #c6c5c3;
+    }
+    .product-prices {
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #c6c5c3;
+      .est {
+        color: #939393;
+        font-size: 12px;
+        font-weight: bold;
+      }
+      .price {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      
+    }
+  }
+}

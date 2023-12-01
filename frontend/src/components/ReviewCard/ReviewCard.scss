@@ -1,0 +1,30 @@
+.review {
+  border-bottom:1px solid var(--gray);
+  padding-top:1.5rem;
+  padding-bottom: 2rem;
+  .user-info {
+    padding-left: 4rem;
+    flex: 1;
+  }
+  .review-content {
+    flex: 3;
+  }
+  .review-data {
+    padding-right: 1rem;
+    flex: 1;
+    .helpful-button {
+      background-color: forestgreen;
+      padding-inline: 1rem;
+      padding-block: 0.5rem;
+      color: white;
+      font-size: 16px;
+    }
+    .unhelpful-button {
+      background-color: maroon;
+      padding-inline: 1rem;
+      padding-block: 0.5rem;
+      color: white;
+      font-size: 16px;
+    }
+  } 
+}

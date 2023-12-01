@@ -1,0 +1,15 @@
+.cart-card {
+  width: calc(100% - 4rem);
+  max-height: 8rem;
+  margin-block: 1rem;
+  padding-block: 2rem;
+  padding-inline: 2rem;
+  background-color: #fff;
+  border-radius: 4px;
+  img {
+    max-height: 100%;
+  }
+  .product-price {
+    font-size: 1.25rem;
+  }
+}

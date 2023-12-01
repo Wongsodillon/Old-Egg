@@ -1,0 +1,32 @@
+.search-header {
+  background-color: #f4f5f7;
+  padding-inline: 2rem;
+  border: 2px solid #d0d3da;
+  .search-info {
+    padding-block: 1rem;
+    color: #a0a1a3;
+  }
+  .search-keyword {
+    color: #41485f;
+  }
+  span {
+    margin-inline: 0.5rem;
+  }
+  .keyword {
+    font-size: 24px;
+    font-weight: bold;
+    color: #41485f;
+    border-bottom: 5px solid #41485f;
+  }
+}
+
+.margin-padding {
+  gap: 1rem;
+  display: flex;
+  margin-inline: 4rem;
+  margin-block: 2rem;
+  padding-inline: 1.5rem;
+  padding-block: 1.5rem;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+}
