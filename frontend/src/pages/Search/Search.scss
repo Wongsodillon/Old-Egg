@@ -23,10 +23,14 @@
 .margin-padding {
   gap: 1rem;
   display: flex;
-  margin-inline: 4rem;
+  margin-inline: 4vw;
   margin-block: 2rem;
   padding-inline: 1.5rem;
   padding-block: 1.5rem;
   background-color: #f7f7f7;
   border-radius: 20px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 }
+

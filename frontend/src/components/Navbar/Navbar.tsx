@@ -90,11 +90,6 @@ const Navbar = () => {
           <p>ASRock RX 6700 XT</p>
           <p>Build a PC</p>
         </div>
-        <div className="bottom-right flex">
-          <p className="info-title">Volume order</p>
-          <p>FEEDBACK</p>
-          <p>HELP CENTER</p>
-        </div>
       </div>
     </div>
   );

@@ -102,6 +102,9 @@
           white-space: nowrap;
         }
       }
+      @media (max-width: 1000px) {
+        grid-template-columns: 1fr 1fr;
+      }
     }
   }
 }

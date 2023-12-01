@@ -3,9 +3,9 @@
   flex-direction: column;
   gap: 4rem;
   background-color: #f7f7f7;
-  padding-inline: 3rem;
+  padding-inline: 3%;
   min-height: 100vh;
-  padding-block: 2rem;
+  padding-block: 2%;
 }
 
 .featured-container {
@@ -69,5 +69,17 @@
         font-style: italic;
       }
     }
+  }
+}
+
+@media (max-width: 960px) {
+  .featured-products {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .featured-products {
+    grid-template-columns: 1fr 1fr;
   }
 }

@@ -116,10 +116,6 @@ const ProductsGrid = ({ products, context }: { products: ProductResult[], contex
   return ( 
     <>
       <aside className='left'>
-        <div className='switch-container'>
-          <p className='gray-text'>Free Shipping</p>
-          <Switch/>
-        </div>
         <div className="filters-container">
           <div className='title-container flex space-between items-center'>
             <p className='filter-title'>Categories</p>

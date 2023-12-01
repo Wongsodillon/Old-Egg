@@ -30,6 +30,10 @@ main {
   gap: 1rem;
   position: relative;
   z-index: 2;
+  @media (max-width: 768px) {
+    flex-direction: row;
+    margin-top: -4rem;
+  }
   .welcome {
     background-color: var(--white);
     flex: 1;
@@ -44,7 +48,7 @@ main {
 .welcome {
   .header {
     font-weight: bold;
-    font-size: 20px;
+    font-size: clamp(1rem, 1.25vw, 1.5rem);
     font-style: italic;
   }
   .welcome-to-newegg {
@@ -54,7 +58,7 @@ main {
     justify-content: flex-end;
     gap: 1rem;
     p {
-      font-size: 14px;
+      font-size: 1rem;
       color: #1946b8;
       font-weight: bold;
 
@@ -69,16 +73,16 @@ main {
       align-items: center;
       gap: 0.25rem;
       img {
-        max-width: 7rem;
-        width: 100%;
+        max-width: 100%;
         min-height: 100%;
       }
       .item-name {
-        font-size: 10px;
+        font-size: 0.75rem;
         white-space: nowrap;
         text-overflow: ellipsis;
       }
     }
+    
   }
 }
 
@@ -89,5 +93,17 @@ main {
   .welcome-container {
     width: 100%;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .welcome-container {
+    flex-direction: column;
+    .welcome {
+      max-height: 10rem;
+    }
+  }
+  main {
+    margin-bottom: 4rem;
   }
 }

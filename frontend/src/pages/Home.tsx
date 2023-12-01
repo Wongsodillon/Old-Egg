@@ -22,7 +22,6 @@ const Home = () => {
   
   const images = [
     { src: "https://i.ibb.co/FYXFXwB/Screenshot-329.png", name: "Intel Core i9-14900K Desktop Processor1" },
-    { src: "../assets/dummyproduct1.jpg", name: "Intel Core i9-14900K Desktop Processor2" },
     { src: "../assets/dummyproduct1.jpg", name: "Intel Core i9-14900K Desktop Processor3" }
   ]
 

@@ -5,6 +5,7 @@ import img1 from "../../assets/dummy1.jpg"
 import img2 from "../../assets/dummy2.jpg"
 import img3 from "../../assets/dummy3.jpg"
 import img4 from "../../assets/dummy4.jpg"
+import img5 from "../../assets/dummy5.jpg"
 import "./Carousel.scss"
 
 const Carousel = () => {
@@ -16,6 +17,7 @@ const Carousel = () => {
     { url: img2 },
     { url: img3 },
     { url: img4 },
+    { url: img5 }
   ]
   const parentStyle = {
     overflow: "hidden",

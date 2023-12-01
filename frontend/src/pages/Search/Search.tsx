@@ -1,7 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import "./Search.scss"
-import Filters from '../../components/Filters/Filters';
 import { searchProducts } from '../../api/ProductsAPI';
 import ProductsGrid from '../../components/ProductsGrid/ProductsGrid';
 import { ProductResult } from '../../types/ProductTypes';

@@ -9,8 +9,9 @@
   }
 }
 .wishlist-products {
+  flex-wrap: wrap;
   .wishlist-product {
-    max-width: 9rem;
+    width: 9rem;
     img {
       max-height: 100%;
       width: 100%;
@@ -25,6 +26,9 @@
   }
 }
 .wishlist-data {
+  p {
+    white-space: nowrap;
+  }
   .view-details {
     cursor: pointer;
     font-weight: bold;
@@ -33,5 +37,17 @@
   .wishlist-by {
     font-size: 14px;
     white-space: nowrap;
+  }
+}
+
+@media (max-width: 960px) {
+  .wishlist-contents {
+    flex-direction: column;
+    .wishlist-data {
+      gap: 1rem;
+      justify-content: start;
+      align-items: center;
+      flex-direction: row;
+    }
   }
 }
