@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
-import { removeAll } from '../api/CartsAPI';
+import { removeAll } from '../../api/CartsAPI';
 import "./OrderSummary.scss"
-import { useAuth } from '../hooks/useAuth';
+import { useAuth } from '../../hooks/useAuth';
 
 type DeliveryProvider = {
   id: number

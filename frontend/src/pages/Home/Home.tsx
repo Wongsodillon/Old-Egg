@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import { FaChevronRight } from "react-icons/fa";
-import Carousel from '../components/Carousel/Carousel';
-import Featured from '../components/Featured/Featured'
-import { useAuth } from '../hooks/useAuth';
+import Carousel from '../../components/Carousel/Carousel';
+import Featured from '../../components/Featured/Featured'
+import { useAuth } from '../../hooks/useAuth';
 import { Link } from 'react-router-dom';
 import "./Home.scss"
 import dummy from "../assets/dummyproduct1.jpg"
 
-import { getCategories } from '../api/ProductsAPI';
+import { getCategories } from '../../api/ProductsAPI';
 
 type Category = {
   id: number;

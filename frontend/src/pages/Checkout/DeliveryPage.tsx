@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-import { getProviders } from '../api/OthersAPI';
-import { useAuth } from '../hooks/useAuth';
-import { getCart } from '../api/CartsAPI';
-import { Cart } from '../types/CartType';
+import { getProviders } from '../../api/OthersAPI';
+import { useAuth } from '../../hooks/useAuth';
+import { getCart } from '../../api/CartsAPI';
+import { Cart } from '../../types/CartType';
 import "./DeliveryPage.scss"
-import CartCard from '../components/CartCard/CartCard';
-import OrderSummary from '../components/OrderSummary';
+import CartCard from '../../components/CartCard/CartCard';
+import OrderSummary from '../../components/OrderSummary/OrderSummary';
 
 type DeliveryProvider = {
   id: number

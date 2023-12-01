@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Cart } from "../../types/CartType";
 import { addProductToWishlist } from '../../api/WishlistsAPI';
 import { removeProductFromCart } from "../../api/CartsAPI";
-import AddToWishlistModal from '../AddToWishlistModal';
+import AddToWishlistModal from '../Modal/AddToWishlistModal';
 import "./CartCard.scss"
 
 interface CartCardProps extends Cart {

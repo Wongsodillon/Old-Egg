@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { useAuth } from '../hooks/useAuth';
-import { getAddress } from '../api/OthersAPI';
+import { useAuth } from '../../hooks/useAuth';
+import { getAddress } from '../../api/OthersAPI';
 import { useNavigate } from 'react-router-dom';
 import "./CheckoutPage.scss"
 

@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getProductByID } from '../api/ProductsAPI';
-import { getMyWishlist, addProductToWishlist } from '../api/WishlistsAPI';
-import { ProductDetails } from '../types/ProductTypes';
-import { WishlistBody } from '../types/WishlistTypes';
-import Rating from '../components/Rating/Rating';
+import { getProductByID } from '../../api/ProductsAPI';
+import { getMyWishlist, addProductToWishlist } from '../../api/WishlistsAPI';
+import { ProductDetails } from '../../types/ProductTypes';
+import { WishlistBody } from '../../types/WishlistTypes';
+import Rating from '../../components/Rating/Rating';
 import { FaRegHeart, FaStar } from "react-icons/fa";
-import { useAuth } from '../hooks/useAuth';
-import AddToWishlistModal from '../components/AddToWishlistModal';
-import { AddCart } from '../types/CartType';
-import { addToCart } from '../api/CartsAPI';
+import { useAuth } from '../../hooks/useAuth';
+import AddToWishlistModal from '../../components/Modal/AddToWishlistModal';
+import { AddCart } from '../../types/CartType';
+import { addToCart } from '../../api/CartsAPI';
 import "./ProductDetail.scss"
 
 const ProductDetail = () => {

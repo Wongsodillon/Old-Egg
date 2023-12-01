@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { getCart, removeAll } from '../api/CartsAPI';
-import { Cart } from '../types/CartType';
-import { useAuth } from '../hooks/useAuth';
-import CartCard from '../components/CartCard/CartCard';
+import { getCart, removeAll } from '../../api/CartsAPI';
+import { Cart } from '../../types/CartType';
+import { useAuth } from '../../hooks/useAuth';
+import CartCard from '../../components/CartCard/CartCard';
 import { useNavigate } from 'react-router-dom';
 import "./CartPage.scss"
 

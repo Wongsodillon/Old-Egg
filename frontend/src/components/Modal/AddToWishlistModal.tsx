@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import { useAuth } from '../hooks/useAuth';
-import { getMyWishlist, addProductToWishlist } from '../api/WishlistsAPI';
-import { WishlistBody } from '../types/WishlistTypes';
+import { useAuth } from '../../hooks/useAuth';
+import { getMyWishlist, addProductToWishlist } from '../../api/WishlistsAPI';
+import { WishlistBody } from '../../types/WishlistTypes';
 import { IoClose } from "react-icons/io5";
-import WishlistCard from "./WishlistCard/WishlistCard";
+import WishlistCard from "../WishlistCard/WishlistCard";
 
 interface Props {
   setAddModal: (value: boolean) => void;
