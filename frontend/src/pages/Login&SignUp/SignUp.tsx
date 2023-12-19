@@ -74,11 +74,6 @@ const SignUp = () => {
         setError(true)
         return
       }
-      else {
-        setErrorMessage("Goood")
-        setError(true)
-        return
-      }
     }
     navigate("/login")
   }

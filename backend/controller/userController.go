@@ -25,22 +25,9 @@ func CreateUser(c *gin.Context) {
 		return
 	}
 
-	// validate unique email
-	var existingUserEmail model.User
-	if err := database.GetDB().Where("email = ?", user.Email).Find(&existingUserEmail).Error; err == nil {
-		c.String(http.StatusOK, "Email already exists")
-		return
-	}
-
-	var existingUserPhone model.User
-	if err := database.GetDB().Where("phone_number = ?", user.PhoneNumber).Find(&existingUserPhone).Error; err == nil {
-		c.String(http.StatusOK, "Phone number already exists")
-		return
-	}
-
 	user.Password = string(hashedPassword)
 
-	// database.GetDB().Create(&user)
+	database.GetDB().Create(&user)
 	c.JSON(http.StatusOK, gin.H{"datas": user})
 }
 
