@@ -11,13 +11,13 @@ const Rating = ({ rating, rating_count }) => {
 
     for (let i = 0; i < 5; i++) {
       if (i < stars) {
-        starsArray.push(<FaStar className='icon-rating'/>)
+        starsArray.push(<FaStar className='icon-rating' key={i}/>)
       } 
       else if ( i === stars && (rating * 10) % 10 >= 5 ) {
-        starsArray.push(<FaStarHalfAlt className='icon-rating'/>)
+        starsArray.push(<FaStarHalfAlt className='icon-rating' key={i}/>)
       }
       else {
-        starsArray.push(<AiOutlineStar className='icon-rating'/>)
+        starsArray.push(<AiOutlineStar className='icon-rating' key={i}/>)
       }
     }
     return starsArray

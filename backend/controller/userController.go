@@ -100,3 +100,8 @@ func GetUserAddress(c *gin.Context) {
 
 	c.JSON(http.StatusOK, address)
 }
+
+func Logout(c *gin.Context) {
+	c.SetCookie("Authorization", "", -1, "", "", true, true)
+	c.String(http.StatusOK, "Logout success")
+}

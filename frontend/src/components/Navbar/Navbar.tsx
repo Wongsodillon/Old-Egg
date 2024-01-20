@@ -6,6 +6,7 @@ import { ImLocation2 } from "react-icons/im";
 import Switch from "../Switch/Switch";
 import Logo from "../../assets/logo.png"
 import { useAuth } from "../../hooks/useAuth";
+import axios from "axios";
 import { useNavigate, Link, useFetcher } from "react-router-dom";
 import "../../style.scss"
 import "./Navbar.scss"
@@ -16,11 +17,25 @@ const Navbar = () => {
   const navigate = useNavigate()
   const [location, setLocation] = useState('Singapore')
   let user = useAuth()
-
   const handleSearch = (e: any) => {
     e.preventDefault()
     navigate(`/search/${e.target.search.value}`)
     e.target.search.value = ''
+  }
+
+  const handleGuest = () => {
+    if (Object.keys(user).length == 0) {
+      navigate("/login")
+    }
+  }
+
+  const logout = async () => {
+    try {
+      await axios.get("http://localhost:8080/logout", { withCredentials: true });
+      window.location.reload()
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   return ( 
@@ -46,11 +61,11 @@ const Navbar = () => {
         <IoIosNotificationsOutline size={30} className="icon"/>
         <Switch/>
         <div className="dropdown">
-          <div className="info-container flex items-center pointer">
+          <div className="info-container flex items-center pointer" onClick={handleGuest}>
             <FaUser size={iconSize} className="icon"/>
             <div className="flex flex-col items-start">
               <p className="info-title">Welcome</p>
-              <p className="info name">{user.name}</p>
+              <p className="info name">{Object.keys(user).length === 0 ? `Sign in / Up` : `${user.name}`}</p>
             </div>
             <IoIosArrowDown/>
           </div>
@@ -58,15 +73,13 @@ const Navbar = () => {
             <Link style={{ textDecoration: 'none', color: 'inherit'}} to='/account'>
               <p className="dropdown-item">Account</p>
             </Link>
-           <Link style={{ textDecoration: 'none', color: 'inherit'}} to='/orders'>
-            <p className="dropdown-item">Orders</p>
-           </Link>
+            <Link style={{ textDecoration: 'none', color: 'inherit'}} to='/orders'>
+              <p className="dropdown-item">Orders</p>
+            </Link>
             <Link style={{ textDecoration: 'none', color: 'inherit'}} to='/wishlists'>
               <p className="dropdown-item">Wishlist</p>
             </Link>
-            <Link to='/login' style={{ textDecoration: 'none', color: 'inherit'}}>
-              <p className="dropdown-item">Sign Out</p>
-            </Link>
+            {Object.keys(user).length != 0 && <p className="dropdown-item pointer" onClick={logout}>Sign Out</p>}
           </div>
         </div>
         <Link style={{ textDecoration: 'none', color: 'inherit'}} to='/cart' >

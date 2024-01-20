@@ -59,7 +59,7 @@ const Home = () => {
           </div>
           <div className='welcome-container'>
             <div className='welcome'>
-              <p className='header'>HI, {user.name}</p>
+              <p className='header'>HI, {Object.keys(user).length == 0 ? 'Guest' : user.name}</p>
               <p className='welcome-to-newegg'>Welcome to Newegg! Hope you enjoy shopping here today. If you have any comment or suggestion, please leave us feedback</p>
               <div className='acc-order flex'>
                 <Link to="/account"><p>YOUR ACCOUNT</p></Link>

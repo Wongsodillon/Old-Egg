@@ -32,7 +32,7 @@ const MiddlewareRoutes = () => {
     <>
       <Navbar></Navbar>
       <Routes>
-      <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/search/:keyword" element={<Search/>}/>
         <Route path='/shop/:id' element={<ShopPage/>}></Route>
         <Route path='/account' element={<Account/>}></Route>

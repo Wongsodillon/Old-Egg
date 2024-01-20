@@ -63,7 +63,7 @@ func main() {
 	router.GET("/getauth", controller.GetUserFromJWT)
 	router.POST("/login", controller.Login)
 	router.GET("/categories", controller.GetCategories)
-
+	router.GET("/logout", controller.Logout)
 	router.POST("/search-products", controller.GetSearchedProducts)
 	router.GET("/featured-brands", controller.GetFeaturedBrands)
 	router.GET("/featured-products", controller.GetFeaturedProducts)

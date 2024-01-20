@@ -19,7 +19,7 @@ export const useAuth = () => {
         const response = await axios.get("http://localhost:8080/getauth", { withCredentials: true });
         setUser(response.data);
       } catch (error) {
-        console.log(error);
+        setUser({} as User)
       }
     };
 
