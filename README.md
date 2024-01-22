@@ -10,6 +10,9 @@ This is my first fullstack project, this project teaches me how to integrate a d
 ## Product Detail
 ![localhost_5173_productdetails](https://github.com/Wongsodillon/Old-Egg/assets/81748327/b2888e72-08a0-4003-9e46-c29033c5f9a3)
 
+## Add to Wishlist
+![localhost_5173_addtowishlists](https://github.com/Wongsodillon/Old-Egg/assets/81748327/9e348a54-cc70-4ba3-bccc-ffa081093cf2)
+
 ## Shop
 ![localhost_5173_shop](https://github.com/Wongsodillon/Old-Egg/assets/81748327/7f2f40dc-dd6a-4198-8ab4-5b496dfad05b)
 
