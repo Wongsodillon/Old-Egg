@@ -7,11 +7,11 @@ This is my first fullstack project, this project teaches me how to integrate a d
 ## Search 
 ![localhost_5173_search](https://github.com/Wongsodillon/Old-Egg/assets/81748327/f0b7350c-0956-4065-b690-7f7d4c89548c)
 
-## Shop
-![localhost_5173_shop](https://github.com/Wongsodillon/Old-Egg/assets/81748327/7f2f40dc-dd6a-4198-8ab4-5b496dfad05b)
-
 ## Product Detail
 ![localhost_5173_productdetails](https://github.com/Wongsodillon/Old-Egg/assets/81748327/b2888e72-08a0-4003-9e46-c29033c5f9a3)
+
+## Shop
+![localhost_5173_shop](https://github.com/Wongsodillon/Old-Egg/assets/81748327/7f2f40dc-dd6a-4198-8ab4-5b496dfad05b)
 
 ## Shop Review
 ![localhost_5173_shopreview](https://github.com/Wongsodillon/Old-Egg/assets/81748327/c305fbeb-cf2b-47a2-9ee1-e1d2b65de883)
